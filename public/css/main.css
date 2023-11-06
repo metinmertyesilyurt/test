@@ -1,0 +1,121 @@
+/* Basic reset for styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 10px;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style: none;
+    background: #555;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a:focus {
+    background: #444;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+  
+  #main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+  }
+  
+  .form-group {
+    margin: 1rem 0;
+  }
+  
+  .form-group label {
+    display: block;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group input[type="number"],
+  .form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+  }
+  
+  .form-group button[type="submit"] {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-group button[type="submit"]:hover {
+    background: #555;
+  }
+  
+  /* Admin Panel specific styles */
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  .admin-table th {
+    background-color: #333;
+    color: white;
+  }
+  
+  .alert {
+    padding: 0.75rem;
+    margin: 1rem 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  
+  .alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+  }
+  
+  .alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+  }
+  

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= product.name %> | Product Showcase</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <header>
+    <h1><%= product.name %> Details</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <% products.forEach(p => { %>
+        <li><%= p.id === product.id ? p.name : `<a href="/product/${p.id}">${p.name}</a>` %></li>
+      <% }) %>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <h2><%= product.name %></h2>
+    <p><%= product.description %></p>
+    
+    <!-- Product Information Form -->
+    <form id="product-form" action="/submit-form" method="post">
+      <input type="hidden" name="productId" value="<%= product.id %>">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+  
+  <footer id="main-footer">
+    <p>Product Showcase © 2023</p>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>
